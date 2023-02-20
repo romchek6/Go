@@ -1,0 +1,14 @@
+{{ define "post" }}
+
+  {{ template "header" }}
+
+    <main role="main" class="inner cover">
+      <h1 class="cover-heading">{{ .Title }}</h1>
+      <p class="lead">{{ .Anons }}</p>
+      <p class="lead">{{ .Content }}</p>
+      <a href="/" class="btn btn-light" >На главную</a>
+    </main>
+
+  {{ template "footer" }}
+
+{{ end }}
